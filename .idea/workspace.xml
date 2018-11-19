@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c8147fc-cd1e-4697-964b-5fb69aa49e73" name="Default" comment="" />
+    <list default="true" id="3c8147fc-cd1e-4697-964b-5fb69aa49e73" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/deposit/service.php" afterPath="$PROJECT_DIR$/src/deposit/service.php" />
+      <change beforePath="$PROJECT_DIR$/src/serviceauthentication/stub_serviceauthentication.php" afterPath="$PROJECT_DIR$/src/serviceauthentication/stub_serviceauthentication.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +27,13 @@
       <file leaf-file-name="service.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/deposit/service.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="66" lean-forward="true" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="n#connect_database#0;n#!!top" expanded="false" />
-                <marker date="1542620175424" expanded="true" signature="2225:2319" ph="UPDATE `ACCOUNT`... " />
+                <marker date="1542623513704" expanded="true" signature="831:955" ph="SELECT `no` ACCOUNT" />
+                <marker date="1542623513704" expanded="true" signature="837:923" ph="UPDATE `ACCOUNT`... " />
+                <marker date="1542623513704" expanded="true" signature="2541:2635" ph="UPDATE `ACCOUNT`... " />
               </folding>
             </state>
           </provider>
@@ -52,8 +57,8 @@
       <file leaf-file-name="serviceauthentication.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/serviceauthentication/serviceauthentication.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+            <state relative-caret-position="120">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -62,8 +67,8 @@
       <file leaf-file-name="stub_serviceauthentication.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/serviceauthentication/stub_serviceauthentication.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="225">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -79,6 +84,7 @@
       <find>servicea</find>
       <find>swal</find>
       <find>int</find>
+      <find>get_acc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,10 +98,10 @@
         <option value="$PROJECT_DIR$/src/serviceauthentication/serviceauthentication.php" />
         <option value="$PROJECT_DIR$/view/main.html" />
         <option value="$PROJECT_DIR$/src/controller.php" />
-        <option value="$PROJECT_DIR$/src/serviceauthentication/stub_serviceauthentication.php" />
         <option value="$PROJECT_DIR$/insert_record.php" />
-        <option value="$PROJECT_DIR$/src/deposit/service.php" />
         <option value="$PROJECT_DIR$/src/deposit/deposit.php" />
+        <option value="$PROJECT_DIR$/src/serviceauthentication/stub_serviceauthentication.php" />
+        <option value="$PROJECT_DIR$/src/deposit/service.php" />
       </list>
     </option>
   </component>
@@ -110,8 +116,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="722" />
-    <option name="width" value="718" />
+    <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -209,12 +214,12 @@
       <workItem from="1542199285770" duration="2209000" />
       <workItem from="1542254232534" duration="9883000" />
       <workItem from="1542596306568" duration="23000" />
-      <workItem from="1542613181290" duration="6522000" />
+      <workItem from="1542613181290" duration="7664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18637000" />
+    <option name="totallyTimeSpent" value="19779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -277,7 +282,9 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#connect_database#0;n#!!top" expanded="false" />
-            <marker date="1542620175424" expanded="true" signature="2225:2319" ph="UPDATE `ACCOUNT`... " />
+            <marker date="1542623513704" expanded="true" signature="831:955" ph="SELECT `no` ACCOUNT" />
+            <marker date="1542623513704" expanded="true" signature="837:923" ph="UPDATE `ACCOUNT`... " />
+            <marker date="1542623513704" expanded="true" signature="2541:2635" ph="UPDATE `ACCOUNT`... " />
           </folding>
         </state>
       </provider>
@@ -336,7 +343,9 @@
           <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
           <folding>
             <element signature="n#connect_database#0;n#!!top" expanded="false" />
-            <marker date="1542620175424" expanded="true" signature="2225:2319" ph="UPDATE `ACCOUNT`... " />
+            <marker date="1542623513704" expanded="true" signature="831:955" ph="SELECT `no` ACCOUNT" />
+            <marker date="1542623513704" expanded="true" signature="837:923" ph="UPDATE `ACCOUNT`... " />
+            <marker date="1542623513704" expanded="true" signature="2541:2635" ph="UPDATE `ACCOUNT`... " />
           </folding>
         </state>
       </provider>
@@ -414,26 +423,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceauthentication/stub_serviceauthentication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/deposit/deposit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="185" column="57" lean-forward="false" selection-start-line="185" selection-start-column="57" selection-end-line="185" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serviceauthentication/serviceauthentication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serviceauthentication/stub_serviceauthentication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -451,13 +452,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceauthentication/serviceauthentication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/deposit/service.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="66" lean-forward="true" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="n#connect_database#0;n#!!top" expanded="false" />
-            <marker date="1542620175424" expanded="true" signature="2225:2319" ph="UPDATE `ACCOUNT`... " />
+            <marker date="1542623513704" expanded="true" signature="831:955" ph="SELECT `no` ACCOUNT" />
+            <marker date="1542623513704" expanded="true" signature="837:923" ph="UPDATE `ACCOUNT`... " />
+            <marker date="1542623513704" expanded="true" signature="2541:2635" ph="UPDATE `ACCOUNT`... " />
           </folding>
         </state>
       </provider>

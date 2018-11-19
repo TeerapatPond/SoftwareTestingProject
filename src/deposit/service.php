@@ -24,6 +24,14 @@ function get_account($account_number)
     }
 }
 
+function get_record_by_account_number($account_number)
+{
+    global $con;
+    $query = "SELECT `no` as `accNo`, `name` as `accName`, `balance` as `accBalance` FROM `ACCOUNT` WHERE `no` = '" . $account_number . "';";
+    $result = mysqli_query($con, $query);
+    return mysqli_fetch_assoc($result);
+}
+
 function is_number($i)
 {
     $number_array = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -43,7 +51,7 @@ function amount_info($amount)
     }
 
     // amount is a number
-    if (floatval($amount) > 100000) {
+    if (intval($amount) > 100000) {
         return array("is_valid" => false, "message" => 'Amount must not more than 100,000');
     } else {
         return array("is_valid" => true, "message" => 'Amount is valid');
@@ -72,11 +80,11 @@ function account_number_info($account_number)
 function deposit($account_number, $amount)
 {
     global $con;
-    $balance = get_account($account_number)['accBalance'];
+    $balance = get_record_by_account_number($account_number)['accBalance'];
     $new_balance = $balance + $amount;
     $query = "UPDATE `ACCOUNT` SET `balance` = '" . $new_balance . "' WHERE `no` = '" . $account_number . "';";
     mysqli_query($con, $query);
-    return get_account($account_number);
+    return get_record_by_account_number($account_number);
 }
 
 function initial()
