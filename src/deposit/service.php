@@ -54,7 +54,11 @@ function amount_info($amount)
     if (intval($amount) > 100000) {
         return array("is_valid" => false, "message" => 'Amount must not more than 100,000');
     } else {
-        return array("is_valid" => true, "message" => 'Amount is valid');
+        if (intval($amount) < 1) {
+            return array("is_valid" => false, "message" => 'Amount must not less than 1');
+        } else {
+            return array("is_valid" => true, "message" => 'Amount is valid');
+        }
     }
 }
 
@@ -69,10 +73,6 @@ function account_number_info($account_number)
     if (strlen($account_number) != 10) {
         return array("is_valid" => false, "message" => 'Account number is not 10 digit');
     }
-
-//    if (sizeof(get_account($account_number)) == 0) {
-//        return array("is_valid" => false, "message" => 'Account number does not exist in database');
-//    }
 
     $acc = get_account($account_number);
     if (array_key_exists("is_valid", $acc)) {
