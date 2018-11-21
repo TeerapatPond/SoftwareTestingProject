@@ -12,6 +12,6 @@ class ServiceAuthentication
         if ($account_number == '3333333333') return array('accNo' => '3333333333', 'accName' => 'Bill Gates', 'accBalance' => '1234');
         if ($account_number == '4444444444') return array('accNo' => '4444444444', 'accName' => 'Linus Torvalds', 'accBalance' => '888');
         if ($account_number == '0123456789') return array('accNo' => '0123456789', 'accName' => 'Satoshi Nakamoto', 'accBalance' => '0');
-        return array("message" => "This account number does not exist in the database");
+        return array("is_valid" => false, "message" => "This account number does not exist in the database");
     }
 }

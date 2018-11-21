@@ -20,7 +20,7 @@ function get_account($account_number)
         $sa = ServiceAuthentication::accountAuthenticationProvider($account_number);
         return $sa;
     } catch (Exception $e) {
-        return array("message" => "This account number does not exist in the database");
+        return array("is_valid" => false, "message" => "This account number does not exist in the database");
     }
 }
 
@@ -70,8 +70,15 @@ function account_number_info($account_number)
         return array("is_valid" => false, "message" => 'Account number is not 10 digit');
     }
 
-    if (sizeof(get_account($account_number)) == 0) {
-        return array("is_valid" => false, "message" => 'Account number does not exist in database');
+//    if (sizeof(get_account($account_number)) == 0) {
+//        return array("is_valid" => false, "message" => 'Account number does not exist in database');
+//    }
+
+    $acc = get_account($account_number);
+    if (array_key_exists("is_valid", $acc)) {
+        if(!$acc['is_valid']) {
+            return $acc;
+        }
     }
 
     return array("is_valid" => true, "message" => 'Amount is valid');
